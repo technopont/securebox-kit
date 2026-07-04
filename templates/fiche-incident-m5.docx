@@ -1,0 +1,25 @@
+# FICHE DE DÉCLARATION D'INCIDENT MAJEUR IOT (CONFORME DIRECTIVE NIS2)
+**Formulaire à notifier à l'ANSSI sous 24 heures en cas de compromission.**
+
+---
+
+## SECTION 1 : INFORMATIONS GÉNÉRALES
+- **Raison sociale de l'entité affectée :** [À COMPLÉTER]
+- **Statut NIS2 :** [ ] Entité Essentielle  |  [ ] Entité Importante
+- **Date/Heure de détection de l'attaque :** [À COMPLÉTER]
+- **Nom du déclarant (CISO/RSSI) :** [À COMPLÉTER]
+
+## SECTION 2 : CARACTÉRISATION DE L'INCIDENT
+*Consigne : Remplir d'après les logs extraits par Suricata et le Watchdog.*
+
+- **Vecteur initial de l'attaque :** [ex: Scan de ports / Injection de firmware / API compromise]
+- **Équipements physiques compromis :** [ ] Capteur local | [ ] Edge Gateway | [ ] Serveur Broker
+- **Indicateurs de compromission (IoC) identifiés :**
+  - IP attaquante présumée : [À RENSEIGNER]
+  - Signature de payload suspecte : [À RENSEIGNER]
+  - Impact opérationnel direct : [À RENSEIGNER]
+
+## SECTION 3 : ACTIONS DE CONFINEMENT ET REMÉDIATION IMMÉDIATE
+- **Quelles actions ont été menées pour isoler la cible ?** [À COMPLÉTER]
+- **Le certificat de l'objet a-t-il été révoqué ?** [ ] Oui | [ ] Non (Si non, justifier)
+- **Délai total de détection de la faille :** [À COMPLÉTER]

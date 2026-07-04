@@ -1,0 +1,17 @@
+# Makefile for network_watchdog
+
+CC = gcc
+CFLAGS = -Wall -Wextra -O2
+TARGET = network_watchdog
+SRC = network_watchdog.c
+
+all: $(TARGET)
+
+$(TARGET): $(SRC)
+	$(CC) $(CFLAGS) -o $(TARGET) $(SRC)
+
+clean:
+	rm -f $(TARGET)
+
+run: all
+	./$(TARGET)

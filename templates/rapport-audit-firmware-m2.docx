@@ -1,0 +1,29 @@
+# RAPPORT D'AUDIT SÉCURITÉ DU FIRMWARE SECUREBOX v1.2
+**Document d'évaluation à compléter par l'apprenant**
+
+- **Nom de l'auditeur :** [À COMPLÉTER]
+- **Date de l'audit :** [À COMPLÉTER]
+- **Cible :** Image binaire firmware_v1.2.bin
+
+---
+
+## 1. Analyse statique des métadonnées du fichier
+*Consigne : Utilisez les commandes d'extraction pour analyser l'en-tête et l'entropie de l'image.*
+
+- **Taille de l'image (octets) :** [À RENSEIGNER]
+- **Type d'architecture cible :** [À RENSEIGNER (ex: ESP32-S3, ARM Cortex-M)]
+- **Entropie globale de l'image (de 0 à 8) :** [À RENSEIGNER]
+  - *Qu'en déduisez-vous concernant la présence d'un chiffrement global de l'image binaire ?* [RÉPONSE]
+
+## 2. Secrets trouvés en clair dans l'image
+*Consigne : Identifiez les clés privées, mots de passe de production et endpoints API enfouis dans l'image.*
+
+| Offset Hexa | Description du secret identifié | Criticité (Élevé/Critique) | Conséquence de la fuite |
+|-------------|---------------------------------|---------------------------|-------------------------|
+| [ex: 0x4E20] | [À Compléter]                   | [À Renseigner]            | [À Renseigner]          |
+| [ ]         | [À Compléter]                   | [ ]                       | [ ]                     |
+
+## 3. Recommandations de remédiation
+*Proposez des solutions architecturales et matérielles pour protéger ces secrets sur des objets réels.*
+- **Recommandation 1 (Sécurisation stockage des clés) :** [À Compléter]
+- **Recommandation 2 (Signatures de démarrage) :** [À Compléter]

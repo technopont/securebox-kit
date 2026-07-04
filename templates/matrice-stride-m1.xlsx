@@ -1,0 +1,17 @@
+# MATRICE DE MENACES S.T.R.I.D.E. - SECUREBOX
+Document de travail à compléter pour identifier et quantifier les risques système.
+
+## Grille de cotation du risque (Score = Probabilité * Impact) :
+- Probabilité : 1 (Très improbable) à 5 (Fréquente / Facile)
+- Impact : 1 (Négligeable) à 5 (Critique / Arrêt de production)
+
+| ID | Catégorie (STRIDE) | Élément Ciblé | Description de la Menace | Probabilité (1-5) | Impact (1-5) | Score Risque | Contre-mesure proposée |
+|----|--------------------|---------------|---------------------------|-------------------|--------------|--------------|------------------------|
+| T1 | **S**poofing       | Capteur IoT   | [À Compléter : Usurpation] | [ ]               | [ ]          | **[ ]**      | [À Compléter]           |
+| T2 | **T**ampering      | Firmware      | [À Compléter : Injection]  | [ ]               | [ ]          | **[ ]**      | [À Compléter]           |
+| T3 | **R**epudiation    | Logs d'accès  | [À Compléter : Effacement] | [ ]               | [ ]          | **[ ]**      | [À Compléter]           |
+| T4 | **I**nformation    | Bus de comm   | [À Compléter : Écoute]     | [ ]               | [ ]          | **[ ]**      | [À Compléter]           |
+| T5 | **D**enial of Serv | Broker MQTT   | [À Compléter : Flooding]   | [ ]               | [ ]          | **[ ]**      | [À Compléter]           |
+| T6 | **E**levation      | Port JTAG     | [À Compléter : Shell Root] | [ ]               | [ ]          | **[ ]**      | [À Compléter]           |
+
+*Note de l'instructeur : Demandez aux apprenants d'étudier les flux d'entrées/sorties (DFD) pour trouver au moins 2 menaces par lettre du mot STRIDE.*

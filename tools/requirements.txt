@@ -1,0 +1,7 @@
+# Python Requirements for SecureBox Kit Tools
+# Used by check_secure_boot.py and other automated compliance validators
+
+# No heavy dependencies needed for basic static analysis,
+# but ready for future extensions like automated PKI or cryptanalysis
+# cryptography>=41.0.0
+# paho-mqtt>=1.6.1

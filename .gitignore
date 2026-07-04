@@ -1,0 +1,26 @@
+# System Files
+.DS_Store
+Thunbs.db
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.venv/
+venv/
+
+# Embedded C / Compiles
+*.o
+*.out
+*.elf
+*.bin
+watchdog/network_watchdog
+
+# Docker Local Volumizing and secrets
+.env
+pki/certs/
+pki/crl/
+mosquitto/config/certs/
+mosquitto/config/crl/

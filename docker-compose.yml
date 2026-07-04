@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  # Broker de communication central
+  securebox-broker:
+    image: eclipse-mosquitto:2.0.15
+    container_name: securebox-broker
+    ports:
+      - "1883:1883"  # Port en clair (À fermer en production !)
+      - "8883:8883"  # Port mTLS Sécurisé (Avec certificats clients)
+    volumes:
+      - ./config/mosquitto-secure.conf:/mosquitto/config/mosquitto.conf:ro
+      - ./pki/certs:/mosquitto/config/certs:ro
+      - ./pki/crl:/mosquitto/config/crl:ro
+
+  # Passerelle IoT de collecte
+  securebox-gateway:
+    image: debian:bullseye-slim
+    container_name: securebox-gateway
+    privileged: true # ❌ Vulnérabilité majeure par conception ! À corriger au M4.
+    ports:
+      - "22:22"      # SSH par défaut (identifiants admin/admin)
+      - "9999:9999"  # API de commande propriétaire en clair
+    volumes:
+      - ./hardening:/hardening
+      - ./config:/config
+    command: bash -c "apt-get update && apt-get install -y openssh-server net-tools ufw && /usr/sbin/sshd -D"
+
+  # Capteur IoT d'acquisition (simulateur)
+  securebox-sensor:
+    image: alpine:latest
+    container_name: securebox-sensor
+    volumes:
+      - ./watchdog:/firmware
+    command: tail -f /dev/null
