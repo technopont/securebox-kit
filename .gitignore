@@ -1,6 +1,6 @@
 # System Files
 .DS_Store
-Thunbs.db
+Thumbs.db
 
 # Python
 __pycache__/
@@ -11,22 +11,27 @@ __pycache__/
 .venv/
 venv/
 
-# Embedded C / Compiles
+# Embedded C / Build artifacts
 *.o
 *.out
 *.elf
-*.bin
-watchdog/network_watchdog
 
-# Docker Local Volumizing and secrets
+# Secrets & Certificates
 .env
+*.pem
+*.key
+*.crt
 pki/certs/
 pki/crl/
 mosquitto/config/certs/
 mosquitto/config/crl/
 
-# Premium / Paid Solutions (Excluded from public repo)
+# IDE
+.vscode/
+.idea/
+
+# Local-only modules
 solutions/
-docs/
-config/
-pki/
+
+# Docker local overrides
+docker-compose.override.yml
