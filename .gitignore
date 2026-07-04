@@ -24,3 +24,9 @@ pki/certs/
 pki/crl/
 mosquitto/config/certs/
 mosquitto/config/crl/
+
+# Premium / Paid Solutions (Excluded from public repo)
+solutions/
+docs/
+config/
+pki/
