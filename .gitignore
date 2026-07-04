@@ -30,9 +30,12 @@ mosquitto/config/crl/
 .vscode/
 .idea/
 
-# Local-only modules
+# Local-only modules (Premium / Instructor Content)
 solutions/
-config/docker-compose-secure.yml
+config/
+docs/
+pki/
+tools/security-score.py
 
 # Docker local overrides
 docker-compose.override.yml
@@ -48,3 +51,4 @@ cmake-build-*/
 
 # Logs
 *.log
+*.zip
