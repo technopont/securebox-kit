@@ -32,6 +32,19 @@ mosquitto/config/crl/
 
 # Local-only modules
 solutions/
+config/docker-compose-secure.yml
 
 # Docker local overrides
 docker-compose.override.yml
+
+# Executables & Build tools
+*.exe
+*.a
+*.so
+*.dll
+*.lib
+build/
+cmake-build-*/
+
+# Logs
+*.log
